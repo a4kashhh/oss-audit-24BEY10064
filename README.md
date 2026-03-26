@@ -3,8 +3,8 @@
 ## Student Details
 
 Name: Akash Pandey
-Registration Number: [Enter Your Registration Number]
-Course: Open Source Software (OSS NGMC)
+Registration Number: 24BEY10064
+Course: Open Source Software - VITYARTHI Flipped Cousrse
 Software Chosen: VLC Media Player
 
 ---
