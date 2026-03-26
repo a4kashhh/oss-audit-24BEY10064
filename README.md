@@ -3,9 +3,13 @@
 ## Student Details
 
 Name: Akash Pandey
+
 Registration Number: 24BEY10064
-Course: Open Source Software - VITYARTHI Flipped Cousrse
+
+Course: Open Source Software - VITYARTHI Flipped Course
+
 Software Chosen: VLC Media Player
+
 
 ---
 
