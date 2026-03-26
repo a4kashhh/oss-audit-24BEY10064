@@ -154,8 +154,8 @@ This project demonstrates how open-source software operates both conceptually an
 
 ## Submission Details
 
-GitHub Repository: [Add your repository link]
-Report: Available in the Report folder
-Scripts: Available in the Scripts folder
+GitHub Repository: (https://github.com/a4kashhh/oss-audit-24BEY10064)
+Report: Check in the Report Folder
+Scripts: Check in the Scripts Folder
 
 ---
