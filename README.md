@@ -43,6 +43,7 @@ What makes VLC stand out:
 
 Project Structure
 
+`
 OSS_Audit_Project/
 │
 ├── Report/
@@ -56,7 +57,6 @@ OSS_Audit_Project/
 │   └── script5.sh
 │
 └── README.md
-
 ---
 
 Script Descriptions
