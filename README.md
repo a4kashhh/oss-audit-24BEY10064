@@ -1,55 +1,48 @@
-# Open Source Audit – VLC Media Player
+Open Source Audit – VLC Media Player
 
-## Student Details
-
-Name: Akash Pandey
-
-Registration Number: 24BEY10064
-
-Course: Open Source Software - VITYARTHI Flipped Course
-
+Student: Akash Pandey  
+Registration Number: 24BEY10064  
+Course: Open Source Software - VITYARTHI Flipped Course  
 Software Chosen: VLC Media Player
 
+---
+
+Project Overview
+
+I took a close look at VLC Media Player in this project—it’s one of the most popular open-source media players out there, built by the folks at VideoLAN. My main goal was to dig into how open-source software works, both in theory and in practice.
+
+The project is split into two parts. First, the theory: I explored where VLC came from, its licensing, some ethical issues, the open-source ecosystem, and how it stacks up against proprietary software. Then there’s the practical side—a bunch of Linux shell scripts to show how you can use and work with VLC on the command line.
 
 ---
 
-## Project Overview
+Objectives
 
-This project presents a detailed audit of VLC Media Player, a widely used open-source multimedia application developed by the VideoLAN organization. The objective of this project is to understand the philosophy, development model, and practical implementation of open-source software.
-
-The project includes both theoretical and practical components. The theoretical section analyzes the origin, licensing, ethical considerations, ecosystem, and comparison with proprietary software. The practical section demonstrates Linux-based implementation through shell scripting.
-
----
-
-## Objectives
-
-* To study the origin and development of VLC Media Player
-* To understand the GNU General Public License (GPL)
-* To analyze ethical aspects of open-source software
-* To explore the Linux footprint of VLC
-* To examine the FOSS ecosystem surrounding VLC
-* To compare open-source and proprietary software
-* To develop shell scripts demonstrating Linux concepts
+* Trace the history and development of VLC Media Player
+* Break down the GNU General Public License (GPL)
+* Look at the ethical side of open-source software
+* Check out VLC’s presence on Linux
+* Explore VLC’s place in the broader FOSS ecosystem
+* Compare open-source and proprietary software
+* Write shell scripts to demonstrate Linux concepts
 
 ---
 
-## About VLC Media Player
+About VLC Media Player
 
-VLC Media Player is a free and open-source multimedia player capable of playing almost all audio and video formats without requiring additional codecs. It was initially developed in 1996 by students and is currently maintained by the VideoLAN organization.
+VLC Media Player is totally free and open source. It plays just about any audio or video format, no extra codecs needed. It started back in 1996 as a student project and VideoLAN keeps it running today.
 
-Key features:
+What makes VLC stand out:
 
-* Cross-platform compatibility
-* Wide format support
-* No external codecs required
-* Lightweight and efficient
-* Open-source under GNU GPL
+* Runs on pretty much any OS
+* Supports lots of formats
+* Doesn’t need external codecs
+* Fast and lightweight
+* Open-source under the GNU GPL
 
 ---
 
-## Project Structure
+Project Structure
 
-```
 OSS_Audit_Project/
 │
 ├── Report/
@@ -63,105 +56,76 @@ OSS_Audit_Project/
 │   └── script5.sh
 │
 └── README.md
-```
 
 ---
 
-## Description of Scripts
+Script Descriptions
 
-### Script 1 – System Identity Report (script1.sh)
+Script 1 – System Identity Report (script1.sh)  
+This one spits out basic system info—things like your Linux distro, kernel version, username, how long your computer’s been running, the date, and so on.  
+Concepts: variables, command substitution, echo
 
-Displays system-related information such as Linux distribution, kernel version, current user, uptime, and date.
+Script 2 – FOSS Package Inspector (script2.sh)  
+Checks if VLC is installed, and shows you some package details.  
+Concepts: if-else, dpkg, grep, case statements
 
-Concepts used: variables, command substitution, echo
+Script 3 – Disk and Permission Auditor (script3.sh)  
+Looks at major directories and lists their permissions, owners, and how much space they take up.  
+Concepts: for loops, ls, du, awk
 
----
+Script 4 – Log File Analyzer (script4.sh)  
+Searches log files for a keyword, counts how many times it pops up, and shows matching lines.  
+Concepts: while loops, if conditions, grep, tail
 
-### Script 2 – FOSS Package Inspector (script2.sh)
-
-Checks whether VLC is installed on the system and displays package details.
-
-Concepts used: if-else, dpkg, grep, case statement
-
----
-
-### Script 3 – Disk and Permission Auditor (script3.sh)
-
-Analyzes important directories and displays permissions, ownership, and disk usage.
-
-Concepts used: for loop, ls, du, awk
+Script 5 – Open Source Manifesto Generator (script5.sh)  
+Lets you type in your thoughts and turns them into a personalized open-source statement, saved to a file.  
+Concepts: reading input, variables, file handling
 
 ---
 
-### Script 4 – Log File Analyzer (script4.sh)
+Running the Scripts
 
-Reads a log file, counts occurrences of a keyword, and displays matching entries.
+Step 1: Go to the Scripts folder
 
-Concepts used: while loop, if condition, grep, tail
-
----
-
-### Script 5 – Open Source Manifesto Generator (script5.sh)
-
-Takes user input and generates a personalized open-source statement saved to a file.
-
-Concepts used: read, variables, file handling
-
----
-
-## How to Run the Scripts
-
-Step 1: Navigate to Scripts folder
-
-```
 cd Scripts
-```
 
-Step 2: Provide execution permission
+Step 2: Make the scripts executable
 
-```
 chmod +x *.sh
-```
 
-Step 3: Execute scripts
+Step 3: Run them
 
-```
-./script1.sh
-./script2.sh
-./script3.sh
-./script4.sh /var/log/syslog error
+./script1.sh  
+./script2.sh  
+./script3.sh  
+./script4.sh /var/log/syslog error  
 ./script5.sh
-```
 
 ---
 
-## Key Learnings
+Key Takeaways
 
-* Understanding of open-source philosophy and licensing
-* Practical experience with Linux commands and shell scripting
-* Knowledge of system-level operations and automation
-* Insight into collaborative software development
-
----
-
-## Open Source vs Proprietary Insight
-
-Open-source software like VLC provides flexibility, transparency, and freedom to modify. Proprietary software offers controlled environments and dedicated support but limits user control.
+* Got a deeper feel for what open source means—philosophy, licensing, all that
+* Hands-on practice with Linux and shell scripting
+* Learned how to interact with the system and automate tasks
+* Saw firsthand how collaboration shapes software
 
 ---
 
-## Conclusion
+Open Source vs Proprietary – My Perspective
 
-This project demonstrates how open-source software operates both conceptually and practically. VLC Media Player serves as an effective example of a reliable, flexible, and widely used open-source application. The project also highlights the importance of collaboration and transparency in modern software development.
+Open-source tools like VLC give you freedom—customization, transparency, you name it. Proprietary software usually comes with better support but locks you in, with a lot less control.
+
+---
+
+Conclusion
+
+This project was a chance to see open-source software in action, both from a big-picture perspective and at the command line. VLC Media Player proves that open source can be powerful, flexible, and super reliable. And honestly, it just reinforces how crucial collaboration and openness are for software today.
 
 ---
 
-## Submission Details
+Submission Details
 
-GitHub Repository: https://github.com/a4kashhh/oss-audit-24BEY10064
-
-Report: Check in the Report Folder
-
-Scripts: Check in the Scripts Folder
-
----
+GitHub Repo: https://github.com/a4kashhh/oss-audit-24BEY10064  
+Report: See the Report folder  
+Scripts: Check out the Scripts folder
